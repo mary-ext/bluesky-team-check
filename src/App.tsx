@@ -12,22 +12,22 @@ const agent = new Agent({ serviceUri: 'https://api.bsky.app' });
 const EMPTY_ARRAY: never[] = [];
 
 const members: [did: DID, handle: string][] = [
-	['did:plc:3jpt2mvvsumj2r7eqk4gzzjz', 'esb.lol'],
-	['did:plc:44ybard66vv44zksje25o7dz', 'bnewbold.net'],
 	['did:plc:fgsn4gf2dlgnybo4nbej5b2s', 'anshnanda.com'],
+	['did:plc:44ybard66vv44zksje25o7dz', 'bnewbold.net'],
 	['did:plc:fpruhuo22xkm5o7ttr2ktxdo', 'danabra.mov'],
+	['did:plc:yk4dd2qkboz2yv6tpubpc6co', 'dholms.xyz'],
 	['did:plc:l3rouwludahu3ui3bt66mfvj', 'divy.zone'],
+	['did:plc:vjug55kidv6sye7ykr5faxxn', 'emilyliu.me'],
+	['did:plc:3jpt2mvvsumj2r7eqk4gzzjz', 'esb.lol'],
+	['did:plc:upo6iq6ekh66d4mbhmiy6se4', 'foysal.codes'],
 	['did:plc:oisofpd7lj26yvgiivf3lxsi', 'haileyok.com'],
+	['did:plc:tpg43qhh4lw4ksiffs4nbda3', 'jacob.gold'],
 	['did:plc:oky5czdrnfjpqslsw2a5iclo', 'jay.bsky.team'],
 	['did:plc:q6gjnaw2blty4crticxkmujt', 'jaz.bsky.social'],
-	['did:plc:qjeavhlw222ppsre4rscd3n2', 'rose.bsky.team'],
-	['did:plc:ragtjsm2j2vknwkz3zp4oxrd', 'pfrazee.com'],
 	['did:plc:tl7zqgil2irwndwojsxszceb', 'jessica.bsky.team'],
-	['did:plc:tpg43qhh4lw4ksiffs4nbda3', 'jacob.gold'],
-	['did:plc:upo6iq6ekh66d4mbhmiy6se4', 'foysal.codes'],
-	['did:plc:vjug55kidv6sye7ykr5faxxn', 'emilyliu.me'],
+	['did:plc:ragtjsm2j2vknwkz3zp4oxrd', 'pfrazee.com'],
+	['did:plc:qjeavhlw222ppsre4rscd3n2', 'rose.bsky.team'],
 	['did:plc:vpkhqolt662uhesyj6nxm7ys', 'why.bsky.team'],
-	['did:plc:yk4dd2qkboz2yv6tpubpc6co', 'dholms.xyz'],
 ];
 
 const App = () => {
