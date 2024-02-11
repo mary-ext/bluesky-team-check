@@ -127,7 +127,13 @@ const App = () => {
 					</p>
 				) : resource.state === 'ready' ? (
 					<>
-						<p>Showing {actor()}</p>
+						<p>
+							Showing {actor()}{' '}
+							{(() => {
+								const count = members.reduce((accu, [did]) => accu + +isFollowed(did), 0);
+								return `(${count}/${members.length})`;
+							})()}
+						</p>
 						<div class="user-list">
 							{
 								/* @once */ members.map(([did, handle]) => {
