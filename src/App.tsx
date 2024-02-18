@@ -7,7 +7,7 @@ import { XRPCError } from '@externdefs/bluesky-client/xrpc-utils';
 
 import type { DID } from '@externdefs/bluesky-client/atp-schema';
 
-const agent = new Agent({ serviceUri: 'https://api.bsky.app' });
+const agent = new Agent({ serviceUri: 'https://public.api.bsky.app' });
 
 const EMPTY_ARRAY: never[] = [];
 
