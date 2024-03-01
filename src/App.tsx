@@ -5,13 +5,13 @@ import { makeAbortable } from '@solid-primitives/resource';
 import { Agent } from '@externdefs/bluesky-client/agent';
 import { XRPCError } from '@externdefs/bluesky-client/xrpc-utils';
 
-import type { DID } from '@externdefs/bluesky-client/atp-schema';
+import type { At } from '@externdefs/bluesky-client/atp-schema';
 
 const agent = new Agent({ serviceUri: 'https://public.api.bsky.app' });
 
 const EMPTY_ARRAY: never[] = [];
 
-const members: [did: DID, handle: string][] = [
+const members: [did: At.DID, handle: string][] = [
 	['did:plc:ksjfbda7262bbqmuoly54lww', 'aaron.bsky.team'],
 	['did:plc:fgsn4gf2dlgnybo4nbej5b2s', 'anshnanda.com'],
 	['did:plc:44ybard66vv44zksje25o7dz', 'bnewbold.net'],
@@ -39,10 +39,10 @@ const App = () => {
 	const [resource] = createResource(actor, async ($actor) => {
 		const $signal = signal();
 
-		let did: string;
+		let did: At.DID;
 
 		if ($actor.startsWith('did:')) {
-			did = $actor;
+			did = $actor as At.DID;
 		} else {
 			const response = await agent.rpc.get('com.atproto.identity.resolveHandle', {
 				signal: $signal,
@@ -76,7 +76,7 @@ const App = () => {
 		return followed;
 	});
 
-	const isFollowed = createSelector<DID[], DID>(
+	const isFollowed = createSelector<At.DID[], At.DID>(
 		() => (resource.state === 'ready' ? resource.latest : EMPTY_ARRAY),
 		(did, array) => array.includes(did),
 	);
