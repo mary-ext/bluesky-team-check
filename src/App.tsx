@@ -13,7 +13,6 @@ const EMPTY_ARRAY: never[] = [];
 
 const members: [did: At.DID, handle: string][] = [
 	['did:plc:ksjfbda7262bbqmuoly54lww', 'aaron.bsky.team'],
-	['did:plc:fgsn4gf2dlgnybo4nbej5b2s', 'anshnanda.com'],
 	['did:plc:44ybard66vv44zksje25o7dz', 'bnewbold.net'],
 	['did:plc:fpruhuo22xkm5o7ttr2ktxdo', 'danabra.mov'],
 	['did:plc:yk4dd2qkboz2yv6tpubpc6co', 'dholms.xyz'],
