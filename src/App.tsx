@@ -27,6 +27,7 @@ const members: [did: At.DID, handle: string][] = [
 	['did:plc:tl7zqgil2irwndwojsxszceb', 'jessica.bsky.team'],
 	['did:plc:ragtjsm2j2vknwkz3zp4oxrd', 'pfrazee.com'],
 	['did:plc:qjeavhlw222ppsre4rscd3n2', 'rose.bsky.team'],
+	['did:plc:p2cp5gopk7mgjegy6wadk3ep', 'samuel.bsky.team'],
 	['did:plc:vpkhqolt662uhesyj6nxm7ys', 'why.bsky.team'],
 ];
 
